@@ -34,7 +34,7 @@ dependencies {
     implementation group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.12.1'
     implementation group: 'io.jsonwebtoken', name: 'jjwt', version: '0.9.1'
     implementation group: 'commons-fileupload', name: 'commons-fileupload', version: '1.4'
-
+    implementation group: 'org.postgresql', name: 'postgresql', version: '9.4-1201-jdbc41'
 }
 
 test {
