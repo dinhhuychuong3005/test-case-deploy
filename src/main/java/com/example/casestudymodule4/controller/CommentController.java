@@ -11,13 +11,14 @@ import com.fasterxml.jackson.databind.node.TextNode;
 import org.springframework.beans.factory.ObjectProvider;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.amqp.RabbitRetryTemplateCustomizer;
+import org.springframework.context.annotation.PropertySource;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.method.P;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.Optional;
-
+@PropertySource("classpath:application.properties")
 @RestController
 @RequestMapping("/api/Comment")
 @CrossOrigin("*")

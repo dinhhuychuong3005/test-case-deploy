@@ -8,6 +8,7 @@ import com.example.casestudymodule4.service.imageUse.IImageUseService;
 import com.example.casestudymodule4.service.jwt.JwtService;
 import com.example.casestudymodule4.service.user.IUserService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.PropertySource;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.mail.javamail.JavaMailSender;
@@ -25,6 +26,7 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/api")
+@PropertySource("classpath:application.properties")
 @CrossOrigin("*")
 public class HomeController {
     @Autowired

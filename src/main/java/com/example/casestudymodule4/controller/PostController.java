@@ -10,6 +10,7 @@ import com.example.casestudymodule4.service.user.UserService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.PropertySource;
 import org.springframework.data.repository.Repository;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -31,6 +32,7 @@ import java.util.Optional;
 @RestController
 @RequestMapping("/api/posts")
 @CrossOrigin("*")
+@PropertySource("classpath:application.properties")
 public class PostController {
     @Autowired
     private IUserService userService;
